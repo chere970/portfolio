@@ -1,17 +1,25 @@
 import React from 'react';
 import profile from '../assets/music.jpg';
+import { motion } from 'framer-motion';
+import { fadeIn } from './Variants'; // Correctly import fadeIn
+
+const fadeInUp = fadeIn('up', 0.5);
 
 function AboutSection() {
   return (
     <section className="bg-gray-5 py-16 flex flex-col items-center relative">
       {/* Main Heading */}
-      <div className="text-center mb-8">
+      <motion.div 
+        variants={fadeInUp} 
+        initial="hidden" 
+        animate="show" 
+        className="text-center mb-8">
         <h1 className="text-4xl font-bold text-gray-800 mb-2">Hello, I am</h1>
         <h2 className="text-5xl font-extrabold text-blue-600 mb-4">Cherinet</h2>
         <p className="text-xl text-blue-500 font-medium">
           
         </p>
-      </div>
+      </motion.div>
 
       {/* Illustration Section */}
       <div className="flex flex-col md:flex-row justify-center items-center">
