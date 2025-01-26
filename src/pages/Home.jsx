@@ -7,7 +7,7 @@ function Home() {
     <>
     <div className="container mx-auto p-8">
         
-        <h1 className="text-3xl text-black font-bold mb-8">Welcome </h1>
+        {/* <h1 className="text-3xl text-black font-bold mb-8">Welcome </h1> */}
         {/* <h1 className="text-3xl text-black font-bold mb-8">Welcome </h1> */}
       {/* <p className="text-lg mb-4">
         Hi, I'm Cherinet Kebede, a web developer passionate about creating 
