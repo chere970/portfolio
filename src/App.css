@@ -1,8 +1,19 @@
+.main-background{
+  background-image:url('../assets/bg.jpg');
+  background-size:cover;
+  background-position:center;
+  ;
+}
+
+
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+ 
+  text-align: start;
+
 }
 
 .logo {
