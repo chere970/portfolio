@@ -1,9 +1,9 @@
 import React from 'react';
-import apa from '../assets/pp.jpg';
+import profile from '../assets/music.jpg';
 
 function AboutSection() {
   return (
-    <section className="bg-gray-50 py-16 flex flex-col items-center relative">
+    <section className="bg-gray-5 py-16 flex flex-col items-center relative">
       {/* Main Heading */}
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold text-gray-800 mb-2">Hello, I am</h1>
@@ -18,7 +18,7 @@ function AboutSection() {
         {/* Image Section */}
         <div className="order-1 md:order-2 flex-1 max-w-sm p-6 mb-8 md:mb-0">
           <img
-            src={apa}
+            src={profile}
             alt="Illustration"
             className="rounded-lg shadow-md w-full h-auto object-cover"
           />

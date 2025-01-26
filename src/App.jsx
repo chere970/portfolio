@@ -7,7 +7,9 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import Aside from './components/Aside';
 import './App.css';
+import bg from './assets/bg.jpg';
 
 function App() {
   return (
@@ -19,13 +21,19 @@ function App() {
 
 function AppContent() {
   const { theme } = useContext(ThemeContext);
-   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div className={`${theme === 'dark' ? 'dark' : ''}`}>
-      <div className="bg-white dark:bg-gray-800 text-gray-900 dark:text-white min-h-screen flex flex-col">
+      <div
+        className="text-gray-900 mt-5 dark:text-white min-h-screen flex flex-col"
+        style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
         <Router>
           <Header />
-          <main className="flex-grow mt-20 mx-20">
+          <div className="hidden lg:block">
+            <Aside />
+          </div>
+          <main className="flex-grow mt-5 mx-3 lg:mx-20 main-background">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
