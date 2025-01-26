@@ -33,6 +33,14 @@ function Footer() {
           >
             <i className="bx bxl-linkedin text-2xl"></i>
           </a>
+          <a
+          href="https://github.com/dashboard"
+          className="text-blue-400 hover:text-blue-300 transition-colors duration-200"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="bx bxl-github text-2xl"></i>
+        </a>
         </div>
       </div>
     </footer>

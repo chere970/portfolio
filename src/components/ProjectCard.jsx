@@ -14,11 +14,11 @@ function ProjectCard({ title, description, link, image, category }) {
   
 
   return (
-    <div className="bg-white shadow-lg rounded-lg border border-gray-200 max-w-sm mx-auto overflow-hidden p-5 transform transition-transform duration-200 hover:scale-105 hover:shadow-2x1">
+    <div className="bg-gray-100    shadow-lg rounded-lg border border-gray-200 max-w-sm mx-auto overflow-hidden p-5 transform transition-transform duration-200 hover:scale-105 hover:shadow-2x1">
       {/* Image Section */}
       <div className="relative  shadow-lg rounded-lg overflow-hidden">
         <img 
-        src={image || placeholderImage}
+        src={image || placeholder}
         alt={title} className="w-full h-48 object-cover" />
         {/* Category Badge */}
         {category && (
@@ -29,13 +29,13 @@ function ProjectCard({ title, description, link, image, category }) {
       </div>
 
       {/* Content Section */}
-      <div className="p-5">
-        <h3 className="text-lg font-semibold mb-2 text-gray-800">{title}</h3>
+      <div className="p-5 ">
+        <h3 className="text-lg font-semibold mb-2 text-blue-400">{title}</h3>
         <p className="text-gray-600 text-sm mb-4">{description}</p>
         <div className="flex items-center justify-between">
           <div
             onClick={handleLike}
-            className={`flex items-center cursor-pointer space-x-1 transition-colors duration-200 ${
+            className={`flex items-center text-blue-400 cursor-pointer space-x-1 transition-colors duration-200 ${
               isLiked ? 'text-blue-500' : 'text-gray-500'
             }`}
           >

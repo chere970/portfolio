@@ -36,6 +36,8 @@ function ContactForm() {
         <p className="text-green-500">Thank you for your message!</p>
       ) : (
         <>
+        <h1 className="text-4xl mt-6 mb-7 text-black font-bold mb-4">Contact Me</h1>
+        <div className='bg-gray-100 p-8 mx-200 rounded-lg shadow-md'>
           <div className="mb-4">
             <label htmlFor="name" className="block text-sm font-medium text-gray-700">
               Name
@@ -45,7 +47,7 @@ function ContactForm() {
               id="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="mt-1 p-2 w-full border rounded-md"
+              className="mt-1 p-2 text-black w-full border border-black rounded-md"
             />
           </div>
           <div className="mb-4">
@@ -57,7 +59,7 @@ function ContactForm() {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="mt-1 p-2 w-full border rounded-md"
+              className="mt-1 p-2 border-black text-black w-full border rounded-md"
             />
           </div>
           <div className="mb-4">
@@ -69,17 +71,19 @@ function ContactForm() {
               rows={4}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="mt-1 p-2 w-full border rounded-md"
+              className="mt-1 text-black border-black p-2 w-full border rounded-md"
             ></textarea>
           </div>
           <button 
             type="submit" 
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            className="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           >
             Send Message
           </button>
+          </div>
         </>
       )}
+      
     </form>
   );
 }

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import TestimonialCard from '../components/TestimonialCard';
@@ -14,18 +13,18 @@ const projectsData = [
   },
   {
     id: 2,
-    title: 'Shoot',
-    description: 'A simple 2D shootem up game built with JavaScript and Canvas.',
+    title: 'Kimas Payment',
+    description: 'Simple payment system for a small business.',
     technologies: ['JavaScript', 'Canvas'],
-     image: '../src/assets/apa.jpg',
-    link: 'https://your-shoot-em-up-link.com',
+     image: '../src/assets/download.jpg',
+    link: 'https://www.pinterest.com/pin/845410161271249284/',
   },
   {
     id: 3,
-    title: 'AI 3D T-Shirt Designer',
-    description: 'An AI-powered tool for designing custom 3D t-shirts.',
+    title: 'Hallel Player',
+    description: 'Music player for listening to your favorite songs.',
     technologies: ['React', 'Node.js', 'Python', 'AI'],
-    image: 't-shirt-designer.jpg',
+    image: '../src/assets/music.jpg',
     link: 'https://your-t-shirt-designer-link.com',
   },
   // Add more projects here
@@ -48,8 +47,8 @@ function Projects() {
   
     return (
       <div className="container mx-auto p-8">
-        <h1 className="text-3xl font-bold mb-8">Projects</h1>
-        <div className="mb-4">
+        <h1 className="text-3xl text-black font-bold mb-8">Projects</h1>
+        <div className="mb-4 border rounded-lg border-black">
           <input
             type="text"
             placeholder="Search projects..."
@@ -58,7 +57,7 @@ function Projects() {
             className="border rounded-md p-2 w-full"
           />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 overflow-hidden">
+        <div className="grid grid-cols-1 gap-6 overflow-hidden">
           {projects.map((project) => (
             <ProjectCard
               key={project.id}
@@ -70,17 +69,7 @@ function Projects() {
             />
           ))}
         </div>
-            <h3 className='w-full mt-5 mb-5'>----------------------------------------------------------------------------------------------------</h3>
-        <div className="m-5 bg-gray-100 p-8 rounded-lg shadow-md">
-          <h2 className="text-3xl text-black font-bold mb-8">Testimonials</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <TestimonialCard
-              name="Jane Doe"
-              quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              image="https://randomuser.me/api/portraits/women/1.jpg"
-            />
-          </div>
-        </div>
+                   
       </div>
     );
   }
