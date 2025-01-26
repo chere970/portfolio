@@ -54,7 +54,7 @@ function Projects() {
             placeholder="Search projects..."
             value={filter}
             onChange={handleFilterChange}
-            className="border rounded-md p-2 w-full"
+            className="border  text-black rounded-md p-2 w-full"
           />
         </div>
         <div className="grid grid-cols-1 gap-6 overflow-hidden">
