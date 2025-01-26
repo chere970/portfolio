@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../utils/useTheme';
 import { Sun, Moon } from 'lucide-react';
@@ -6,6 +6,10 @@ import { Sun, Moon } from 'lucide-react';
 function Header() {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.className = theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-white text-gray-800';
+  }, [theme]);
 
   return (
     <header

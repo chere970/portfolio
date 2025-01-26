@@ -19,13 +19,13 @@ function App() {
 
 function AppContent() {
   const { theme } = useContext(ThemeContext);
-
+   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className={`${theme === 'dark' ? 'dark' : ''}`}>
-      <div className="bg-white  text-gray-900 dark:text-white min-h-screen flex flex-col">
+      <div className="bg-white dark:bg-gray-800 text-gray-900 dark:text-white min-h-screen flex flex-col">
         <Router>
           <Header />
-          <main className="flex-grow mt-20 mx-20 main-background">
+          <main className="flex-grow mt-20 mx-20">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
@@ -40,34 +40,3 @@ function AppContent() {
 }
 
 export default App;
-
-
-// import React, { useState } from 'react';
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import { ThemeProvider,ThemeContext } from './utils/useTheme'; 
-
-// import Header from './components/Header';
-// import Footer from './components/Footer';
-// import Home from './pages/Home';
-// import Projects from './pages/Projects';
-// import Contact from './pages/Contact';
-
-
-
-// function App() {
-//   return (
-//     <ThemeProvider>
-//       <Router>
-//         <Header />
-//         <Routes>
-//           <Route path="/" element={<Home />} />
-//           <Route path="/projects" element={<Projects />} />
-//           <Route path="/contact" element={<Contact />} />
-//         </Routes>
-//         <Footer />
-//       </Router>
-//     </ThemeProvider>
-//   );
-// }
-
-// export default App;
