@@ -5,15 +5,15 @@ import TestimonialCard from '../components/TestimonialCard';
 const projectsData = [
   {
     id: 1,
-    title: 'Rental System',
+    title: 'Gojo Rental System',
     description: 'Online rental system for managing rental properties.',
     technologies: ['React', 'JavaScript', 'CSS'],
     image: '../src/assets/apa.jpg',
-    link: 'https://github.com/chere970/rental-system-c-',
+    link: 'https://githu',
   },
   {
     id: 2,
-    title: 'Kimas Payment',
+    title: 'Kash Payment',
     description: 'Simple payment system for a small business.',
     technologies: ['JavaScript', 'Canvas'],
      image: '../src/assets/download.jpg',
@@ -21,11 +21,11 @@ const projectsData = [
   },
   {
     id: 3,
-    title: 'Hallel Player',
+    title: 'Hasset Player',
     description: 'Music player for listening to your favorite songs.',
     technologies: ['React', 'Node.js', 'Python', 'AI'],
     image: '../src/assets/music.jpg',
-    link: 'https://your-t-shirt-designer-link.com',
+    link: 'https://ycom',
   },
   // Add more projects here
 ];

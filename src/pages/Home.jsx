@@ -9,19 +9,19 @@ import SkillCard from '../components/SkillCard';
 function Home() {
   const testimonials = [
     {
-      name: 'Bizuneh',
+      name: 'Dagm',
       quote:
         'Using Rental System has been a game-changer for me. The platform is incredibly user-friendly and intuitive.',
       image: img,
     },
     {
-      name: 'Tamirat',
+      name: 'Cherinet',
       quote:
         'Rental System is the perfect platform for managing rentals. The seamless process makes it stand out.',
       image: img,
     },
     {
-      name: 'Helen',
+      name: 'Hasset',
       quote:
         'Fantastic experience! The UI is intuitive, and the process of finding and renting equipment was quick and easy.',
       image: img,
@@ -38,12 +38,7 @@ function Home() {
     <>
     <div className="container mx-auto p-8">
         
-        {/* <h1 className="text-3xl text-black font-bold mb-8">Welcome </h1> */}
-        {/* <h1 className="text-3xl text-black font-bold mb-8">Welcome </h1> */}
-      {/* <p className="text-lg mb-4">
-        Hi, I'm Cherinet Kebede, a web developer passionate about creating 
-        user-friendly and engaging web experiences.
-        </p> */}
+     
       <AboutSection />
       <h2 className="text-3xl text-black font-bold mb-8">Skills</h2>
       <div className="container bg-gray-300 w-full flex flex-col mx-auto p-8 m-5 space-y-6 rounded-lg shadow-md">

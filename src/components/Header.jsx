@@ -13,7 +13,7 @@ function Header() {
     >
       <nav className="flex justify-between items-center">
         <Link to="/" className="text-xl font-bold">
-          CHK
+          Kaleab Wasihun
         </Link>
         <div className="hidden md:flex space-x-4">
           <Link to="/" className="hover:text-blue-500">
@@ -69,6 +69,7 @@ function Header() {
           <Link to="/contact" className="block hover:text-blue-500">
             Contact
           </Link>
+          
           <button
             onClick={toggleTheme}
             className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center hover:shadow-md transition-transform transform hover:scale-110"

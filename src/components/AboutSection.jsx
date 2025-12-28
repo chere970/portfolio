@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from '../assets/music.jpg';
+import profile from '../assets/bass.png';
 import { motion } from 'framer-motion';
 import { fadeIn } from './Variants'; // Correctly import fadeIn
 
@@ -15,7 +15,7 @@ function AboutSection() {
         animate="show" 
         className="text-center mb-8">
         <h1 className="text-4xl font-bold text-gray-800 mb-2">Hello, I am</h1>
-        <h2 className="text-5xl font-extrabold text-blue-600 mb-4">Cherinet</h2>
+        <h2 className="text-5xl font-extrabold text-blue-600 mb-4">Kaleab Wasihun</h2>
         <p className="text-xl text-blue-500 font-medium">
           
         </p>
